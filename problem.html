@@ -47,9 +47,8 @@ section { padding:6rem 3.5rem; }
 h2 { font-family:'DM Serif Display',serif; font-size:clamp(2rem,3vw,2.85rem); color:var(--text); line-height:1.2; margin-bottom:1.4rem; }
 p { color:var(--text-2); }
 .problem { background:var(--bg); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding-top:10rem; }
-.problem-grid { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:center; }
-.problem p { margin-bottom:1.1rem; }
-.callout { border-radius:12px; padding:3rem; background:var(--grad-v); box-shadow:0 10px 36px rgba(41,168,163,0.22); }
+.problem p { margin-bottom:1.1rem; max-width:780px; }
+.callout { border-radius:12px; padding:3rem; background:var(--grad-v); box-shadow:0 10px 36px rgba(41,168,163,0.22); max-width:780px; }
 .callout p { font-family:'DM Serif Display',serif; font-size:1.55rem; color:#fff; line-height:1.45; margin:0; }
 footer { background:#ffffff; padding:1.6rem 3.5rem; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); }
 .footer-logo img { height:72px; display:block; }
@@ -82,20 +81,17 @@ footer p { font-size:0.78rem; color:var(--text-3); }
 
 <section class="problem" id="problem">
   <div class="max-w">
-    <div class="problem-grid">
-      <div>
-        <div class="section-label">
-          <span class="grad-line"></span>
-          <span class="grad-text">The Problem</span>
-        </div>
-        <h2>Hospital data could unlock faster approvals.<br>Until now, it couldn't leave the building.</h2>
-        <p>Every day, hospitals generate data that could support medical device approvals - outcomes, safety signals, real-world performance. That evidence already exists. But privacy regulations, liability concerns, and IT constraints have made it nearly impossible to share. Approvals stall, cost more, and sometimes fail on evidence that was there all along.</p>
-        <p>In December 2025, the FDA issued final guidance removing the requirement for identifiable patient-level data in real-world evidence submissions. De-identified, distributed datasets may now be considered for device regulatory decisions - a meaningful shift for sponsors who have long been locked out of this data.</p>
-        <p style="font-size:0.88rem; color:var(--text-3); margin-top:0.8rem; font-style:italic;">Note: The December 2025 guidance applies to medical devices. FDA has indicated it intends to consider parallel updates for drugs and biologics.</p>
-      </div>
-      <div class="callout">
-        <p>This isn't a data shortage.<br><br>It's an infrastructure problem - and the regulatory environment is beginning to reflect that.</p>
-      </div>
+    <div class="section-label">
+      <span class="grad-line"></span>
+      <span class="grad-text">The Problem</span>
+    </div>
+    <h2>Hospital data could unlock faster approvals. The infrastructure to use it safely did not exist. Until now.</h2>
+    <p>Every day, hospitals generate outcomes data, safety signals, and real-world performance records that could support regulatory submissions. That evidence already exists. But privacy regulations, liability concerns, and IT constraints have made it nearly impossible to access. Approvals stall. Costs climb. Evidence that was there all along goes unused.</p>
+    <p>For rare disease sponsors, the stakes are even higher. Patient populations are small and scattered across institutions. Randomized trials are often impractical or impossible. Real-world evidence is not just helpful in these cases. It is frequently the only path forward. Federated infrastructure makes it possible to reach those patients without asking any single hospital to hand over their data.</p>
+    <p>In December 2025, the FDA issued final guidance removing the requirement for identifiable patient-level data in real-world evidence submissions. De-identified, distributed datasets may now be considered for device regulatory decisions. This is a meaningful shift for sponsors who have long been locked out of this data. NexusRWE was built specifically for this moment.</p>
+    <p style="font-size:0.88rem; color:var(--text-3); margin-top:0.5rem; font-style:italic;">The December 2025 guidance applies to medical devices. FDA has indicated it intends to consider parallel updates for drugs and biologics.</p>
+    <div class="callout" style="margin-top:3rem;">
+      <p>This is not a data shortage. It is an infrastructure problem. And the regulatory environment is beginning to reflect that.</p>
     </div>
   </div>
 </section>
