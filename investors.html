@@ -86,7 +86,11 @@ footer p { font-size:0.78rem; color:var(--text-3); margin:0; }
   .btn { display:block; width:100%; text-align:center; box-sizing:border-box; }
   .cta-row { flex-direction:column; }
   .uc-block { padding:1.5rem; }
-}</style>
+}
+.story-section { background:var(--white); border-top:1px solid var(--border); padding-top:10rem; }
+.story-section .max-w { max-width:780px; }
+.story-section p { margin-bottom:1.1rem; }
+@media(max-width:900px) { .story-section { padding-top:8rem; } }</style>
 </head>
 <body>
 
@@ -106,7 +110,14 @@ footer p { font-size:0.78rem; color:var(--text-3); margin:0; }
 <button class="nav-hamburger" onclick="toggleNav()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
 </nav>
 
-<section class="intro-section">
+<section class="story-section">
+  <div class="max-w">
+    <h2>Built by someone who lived the problem.</h2>
+    <p>After 15 years inside and outside FDA-regulated companies, the bottleneck was always the same. The evidence existed. The hospitals had it. But getting to it required months of legal negotiation, data use agreements, HIPAA business associate agreements, and patient data leaving institutions where it was generated. NexusRWE was built to remove that bottleneck.</p>
+    <p>Every part of the system is designed to eliminate the legal friction that has historically blocked real-world evidence generation. From query approval to result delivery, every step is governed, logged, and auditable from end to end. The audit trail is not an afterthought. It is the foundation, built specifically to give FDA the confidence it needs to rely on distributed real-world evidence in regulatory decisions. Sponsors get the evidence they need. Hospitals keep their data. Regulators get transparency they can trust.</p>
+  </div>
+</section>
+<section class="intro-section" style="padding-top:4rem">
   <div class="max-w">
     <div class="section-label">
       <span class="grad-line"></span><span class="grad-text">Investors</span>
