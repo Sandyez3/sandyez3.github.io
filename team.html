@@ -50,7 +50,7 @@ p { color:var(--text-2); }
 .team-name { font-family:'DM Serif Display',serif; font-size:1.5rem; color:var(--text); margin-bottom:0.2rem; }
 .team-title { font-family:'Space Mono',monospace; font-size:0.65rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:700; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
 .team-years { font-family:'Space Mono',monospace; font-size:0.68rem; color:var(--teal); letter-spacing:0.08em; margin-top:0.3rem; }
-.team-bio { font-size:1rem; color:var(--text-2); line-height:1.78; }
+.team-bio { color:var(--text-2); line-height:1.78; }
 .why { background:var(--white); border-top:1px solid var(--border); }
 .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2.5rem; }
 .why-card { border:1.5px solid var(--border); border-radius:12px; padding:2.3rem; background:var(--bg); transition:all 0.22s; position:relative; overflow:hidden; }
@@ -58,8 +58,8 @@ p { color:var(--text-2); }
 .why-card:hover .why-card-top { transform:scaleX(1); }
 .why-card:hover { box-shadow:0 8px 28px rgba(41,168,163,0.1); border-color:var(--teal-lt); }
 .why-icon { font-size:1.6rem; margin-bottom:1rem; }
-.why-card h3 { font-family:'DM Serif Display',serif; font-size:1.25rem; color:var(--text); margin-bottom:0.75rem; }
-.why-card p { font-size:1rem; color:var(--text-2); line-height:1.72; }
+.why-card h3 { font-family:'DM Serif Display',serif; color:var(--text); margin-bottom:0.75rem; }
+.why-card p { color:var(--text-2); line-height:1.72; }
 .cta-section { background:var(--grad-v); padding:7rem 3.5rem; text-align:center; position:relative; overflow:hidden; }
 .cta-section::before { content:''; position:absolute; inset:0; pointer-events:none; background: radial-gradient(ellipse 60% 80% at 10% 50%,rgba(255,255,255,0.07) 0%,transparent 55%), radial-gradient(ellipse 50% 70% at 90% 20%,rgba(0,0,0,0.08) 0%,transparent 50%); }
 .cta-section h2 { color:#fff; margin-bottom:0.75rem; }
@@ -101,7 +101,12 @@ footer p { font-size:0.78rem; color:var(--text-3); }
 .story-section { background:var(--white); border-top:1px solid var(--border); padding-top:10rem; }
 .story-section .max-w { max-width:780px; }
 .story-section p { margin-bottom:1.1rem; }
-@media(max-width:900px) { .story-section { padding-top:8rem; } }</style>
+@media(max-width:900px) { .story-section { padding-top:8rem; } }
+/* Standard typography - consistent across all pages */
+h3 { font-family:'DM Serif Display',serif; font-size:1.5rem; line-height:1.3; margin-bottom:1rem; }
+h4 { font-family:'Space Mono',monospace; font-size:1.1rem; font-weight:700; line-height:1.4; margin-bottom:0.5rem; }
+p { font-size:1.1rem; color:var(--text-2); }
+.use-case-item { font-size:1.1rem; }
 </head>
 <body>
 

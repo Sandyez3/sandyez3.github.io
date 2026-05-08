@@ -61,12 +61,12 @@ p:last-of-type { margin-bottom:0; }
 .divider-section p { font-family:'Space Mono',monospace; font-size:0.82rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-3); margin:0; }
 .use-case-section { background:var(--grad-v); padding:6rem 3.5rem; color:#fff; }
 .use-case-section h2 { color:#fff; margin-top:0; }
-.use-case-section h3 { font-family:'DM Serif Display',serif; font-size:clamp(1.8rem,3vw,2.6rem); color:#fff; line-height:1.2; margin-bottom:0.5rem; }
+.use-case-section h3 { font-family:'DM Serif Display',serif; color:#fff; line-height:1.2; margin-bottom:0.5rem; }
 .use-case-section .eyebrow { font-family:'Space Mono',monospace; font-size:0.8rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.65); margin-bottom:1rem; }
 .use-case-section p { color:rgba(255,255,255,0.88); margin-bottom:1.1rem; }
 .use-case-section p:last-of-type { margin-bottom:0; }
 .uc-block { background:rgba(255,255,255,0.1); border-radius:12px; padding:2rem 2.5rem; margin-top:2.5rem; }
-.uc-block h2 { color:#fff; font-size:1.3rem; margin-top:0; margin-bottom:0.75rem; }
+.uc-block h3 { color:#fff; margin-top:0; margin-bottom:0.75rem; }
 footer { background:#ffffff; padding:1.6rem 3.5rem; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); }
 .footer-logo img { height:72px; display:block; }
 footer p { font-size:0.78rem; color:var(--text-3); margin:0; }
@@ -94,7 +94,12 @@ footer p { font-size:0.78rem; color:var(--text-3); margin:0; }
   .btn { display:block; width:100%; text-align:center; box-sizing:border-box; }
   .cta-row { flex-direction:column; }
   .uc-block { padding:1.5rem; }
-}</style>
+}
+/* Standard typography - consistent across all pages */
+h3 { font-family:'DM Serif Display',serif; font-size:1.5rem; line-height:1.3; margin-bottom:1rem; }
+h4 { font-family:'Space Mono',monospace; font-size:1.1rem; font-weight:700; line-height:1.4; margin-bottom:0.5rem; }
+p { font-size:1.1rem; color:var(--text-2); }
+.use-case-item { font-size:1.1rem; }
 </head>
 <body>
 
@@ -150,22 +155,22 @@ footer p { font-size:0.78rem; color:var(--text-3); margin:0; }
     <h3>A Hospital Participates in RWE</h3>
 
     <div class="uc-block">
-      <h2>What this looks like in practice</h2>
+      <h3>What this looks like in practice</h3>
       <p>A regional academic medical center has 1.2 million patient records and a strong clinical informatics team. Pharma sponsors regularly ask about data partnerships. The CIO, legal, and compliance teams consistently say no. HIPAA exposure, breach risk, and reputational concerns outweigh the modest payments offered.</p>
     </div>
 
     <div class="uc-block">
-      <h2>The old way</h2>
+      <h3>The old way</h3>
       <p>Sign a data use agreement. Export de-identified patient records to a sponsor or data aggregator. Hope the de-identification holds. Accept ongoing legal exposure for years. Get paid based on how many patient records left the building.</p>
     </div>
 
     <div class="uc-block">
-      <h2>With NexusRWE</h2>
+      <h3>With NexusRWE</h3>
       <p>The hospital onboards once with a standard governance configuration. Sponsors submit locked study protocols. Because no patient data ever leaves, the traditional approval burden largely falls away. IRB review, HIPAA business associate agreements, and ongoing breach exposure are no longer part of the equation. The CIO, legal, and compliance teams review scope and resource allocation, not patient privacy risk. Approved studies run locally inside a secure, isolated environment. Only aggregate, privacy-protected results leave. Nothing else. The hospital is compensated for compute resources, not patient records.</p>
     </div>
 
     <div class="uc-block">
-      <h2>The outcome</h2>
+      <h3>The outcome</h3>
       <p>The hospital participates in regulatory-grade studies it previously had to decline. Data sovereignty is structural, not just promised. Compensation is tied to a service the hospital actually provides, not to the volume of patient data exported.</p>
     </div>
   </div>
